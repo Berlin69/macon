@@ -572,6 +572,15 @@
    <script src="
    https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
    <script src="js/script.js"></script>
+   <script>
+      $(function () {
+      $('.blog__posts').slice(0, 1).show();
+      $('#loadMore').on('click', function (e) {
+         e.preventDefault();
+         $('.blog__posts:hidden').slice(0, 4).slideDown();
+      })
+   })
+   </script>
 </body>
 
 </html>
